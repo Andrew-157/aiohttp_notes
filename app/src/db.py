@@ -36,3 +36,14 @@ class Tag(Base):
 
     id = Column(Integer, primary_key=True)
     name = Column(String(25), nullable=False, unique=True)
+
+
+async def pg_context(app):
+    conf = app['config']['postgres']
+    url_db = f"postgresql://{conf['user']}:{conf['password']}@{conf['host']}/{conf['database']}"
+    engine = create_engine(url_db)
+    DBSession = sessionmaker(bind=engine)
+    session = DBSession()
+    app['session_db'] = session
+    yield
+    app['session_db'].close()
