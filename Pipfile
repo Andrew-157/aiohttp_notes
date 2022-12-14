@@ -10,6 +10,7 @@ pyyaml = "*"
 alembic = "*"
 psycopg2-binary = "*"
 py-postgresql = "*"
+aiohttp-jinja2 = "*"
 
 [dev-packages]
 autopep8 = "*"

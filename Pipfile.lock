@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3f03e2dbaf85948eadfc8106330540e84d787be2bbbd6857055930e288a66433"
+            "sha256": "3d2eb7c24dd1a22694918e68d751c63e083b4c8bf2e0419030bd3bb2e3df4f11"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -108,6 +108,14 @@
             ],
             "index": "pypi",
             "version": "==3.8.3"
+        },
+        "aiohttp-jinja2": {
+            "hashes": [
+                "sha256:7c3ba5eac060b691f4e50534af2d79fca2a75712ebd2b25e6fcb1295859f910b",
+                "sha256:b55c0ed167b0cc4b6d6a50fb2299a44beb5dc4aec9df21305b91a5484694cf74"
+            ],
+            "index": "pypi",
+            "version": "==1.5"
         },
         "aiosignal": {
             "hashes": [
@@ -302,6 +310,14 @@
             ],
             "markers": "python_version >= '3.5'",
             "version": "==3.4"
+        },
+        "jinja2": {
+            "hashes": [
+                "sha256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852",
+                "sha256:6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==3.1.2"
         },
         "mako": {
             "hashes": [
