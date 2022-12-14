@@ -1,6 +1,5 @@
 from aiohttp import web
-from app.src.routes import index
 
 
-def setup_routes(app: web.Application):
-    app.router.add_get('/', index)
+async def index(request):
+    return web.Response(text="Hello AIOHTTP!")
