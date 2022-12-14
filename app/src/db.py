@@ -44,6 +44,6 @@ async def pg_context(app):
     engine = create_engine(url_db)
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
-    app['session_db'] = session
+    app['db_session'] = session
     yield
-    app['session_db'].close()
+    app['db_session'].close()
