@@ -7,6 +7,9 @@ name = "pypi"
 aiohttp = "*"
 sqlalchemy = "*"
 pyyaml = "*"
+alembic = "*"
+psycopg2-binary = "*"
+py-postgresql = "*"
 
 [dev-packages]
 autopep8 = "*"
